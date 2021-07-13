@@ -1,0 +1,13 @@
+import { By } from 'webdriverio';
+import chai, { expect } from 'chai';
+import allureReporter from '@wdio/allure-reporter'
+class Transaction {
+    get check_visible_bottom() {
+        $(buttonTransaction).waitForDisplayed({ timeout: 5000 });
+        $(buttonTransaction).isDisplayed().should.equal(true);
+        $(buttonTransaction).click();
+        $(switchTransaction).waitForDisplayed({ timeout: 8000 });
+        $(switchTransaction).click();
+    get assert_switch(){
+        chaiExpect(this.switchTransaction.getAttribute("checked").equal(false))
+    }
