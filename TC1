@@ -8,8 +8,8 @@ describe ('Account function', ()=> {
         login.should_click_on_login_button_successfully.loginbutton
         login.enter_pin
         //verify filter
-        PageObjectTest.check_visible_bottom
-        PageObjectTest.assert_switch
+        Transaction.check_visible_bottom
+        Transaction.assert_switch
         driver.close()
         
     });
