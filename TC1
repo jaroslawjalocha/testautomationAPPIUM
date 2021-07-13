@@ -1,0 +1,19 @@
+import login from './login/loginT';
+import PageObjectTest from './login/PageObjectTest';
+describe ('Account function', ()=> {
+    
+    it ('Login with correct creditians', () => {
+        //login to account
+        login.check_login_screen
+        login.should_click_on_login_button_successfully.loginbutton
+        login.enter_pin
+        //verify filter
+        PageObjectTest.check_visible_bottom
+        PageObjectTest.assert_switch
+        driver.close()
+        
+    });
+
+
+
+});
