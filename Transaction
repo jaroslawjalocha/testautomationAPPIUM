@@ -11,3 +11,4 @@ class Transaction {
     get assert_switch(){
         chaiExpect(this.switchTransaction.getAttribute("checked").equal(false))
     }
+   export default new Transaction()
