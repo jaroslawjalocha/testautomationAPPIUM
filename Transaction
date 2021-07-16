@@ -1,7 +1,7 @@
 import { By } from 'webdriverio';
 import chai, { expect } from 'chai';
 import allureReporter from '@wdio/allure-reporter'
-const switchTransaction = 'android=new UiSelector().resourceId("pl.pkobp.ipkobiznes.dev:id/onOffSwitch'
+const switchTransaction = 'android=new UiSelector().resourceId("pl.testswitch..dev:id/onOffSwitch'
 class Transaction {
     get check_visible_bottom() {
         $(buttonTransaction).waitForDisplayed({ timeout: 5000 });
